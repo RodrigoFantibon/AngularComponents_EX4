@@ -1,0 +1,53 @@
+
+<div class="container my-3 p-3 border border-round">
+    <div class="form-group">
+        <table class="table">
+          <thead class="thead-dark">
+          <tr>
+            <td class="text-center">Nome do Curso</td>
+            <td class="text-center">Carga Horaria</td>
+          </tr>
+          </thead>
+          <tr *ngFor="let curso of cursoArray">
+            <td class="text-center">{{curso.nome_curso}}</td>
+            <td class="text-center">{{curso.carga_horaria}}</td>
+          </tr>
+          
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container my-3 border p-3">
+  <form>
+    <div class="form-group">
+      <label for="nomeInput">Nome</label>
+      <input type="text" class="form-control" id="nomeInput" placeholder="Digite um nome" #nomeInput>
+    </div>
+    <div class="d-grid gap-2 mt-1">
+      <button (click)="adicionar(nomeInput)"type="button" class="btn btn-primary">
+        Adicionar
+      </button>
+      <div [hidden]="esconderCaixa" class="alert alert-primary mt-3 p-3">
+        {{nome}}
+      </div>
+    </div>
+  </form>
+</div> -->
+
+
+<!-- <p>Lançando um dado: {{lancarDado()}}</p>
+<p>Oi, meu nome é {{nome}} e tenho {{idade}} anos.</p>
+2 + 2 = {{2 + 2}} -->
